@@ -132,7 +132,7 @@
         @media (min-width: 900px) {
             .card {
                 display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-columns: repeat(3, 1fr);
                 background: #280001;
                 padding: 16px;
                 margin-bottom: 15px;
@@ -339,7 +339,7 @@
             let line = "";
             //write the FOR loop that repeats icon cap times
             // for (...) { line += icon; }
-            for (let i = 1; i <= qty; i++) {
+            for (let i = 1; i <= cap; i++) {
                 line += icon
             }
 
